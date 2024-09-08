@@ -22,6 +22,28 @@
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS untuk desain website */
+    .tombol-play-pause {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .tombol-play-pause:hover {
+      background-color: #3e8e41;
+    }
+    #media-player {
+      display: none;
+    }
+  </style>
 
 </head>
 
@@ -212,6 +234,12 @@
           <small class="block">Design by <a href="">@endahfn</a>.</small>
         </div>
       </div>
+
+      <button class="tombol-play-pause" id="tombol-play-pause">Play</button>
+      <div id="media-player" class="d-none">
+        <audio id="lagu" src="audio/lagu-undangan.mp3" controls></audio>
+      </div>
+    
     </div>
   </footer>
 
@@ -238,6 +266,19 @@
     if (tamu) {
       document.getElementById('tamu').innerHTML = tamu.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     };
+
+    const tombolPlayPause = document.getElementById('tombol-play-pause');
+    const mediaPlayer = document.getElementById('media-player');
+
+    tombolPlayPause.addEventListener('click', function() {
+      if (lagu.paused) {
+        lagu.play()
+        tombolPlayPause.innerHTML = 'Pause';
+      } else {
+        lagu.pause();
+        tombolPlayPause.innerHTML = 'Play';
+      }
+    });
   </script>
 </body>
 

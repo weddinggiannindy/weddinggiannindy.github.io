@@ -3,6 +3,10 @@
   --bg: #c8e1ee;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 body {
   font-size: 1.2rem;

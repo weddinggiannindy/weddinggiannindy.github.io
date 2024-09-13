@@ -6,6 +6,7 @@
 .gallery{
   font-family:"Sacramento", cursive;
   font-size: 6rem;
+  font-weight: bold;
   color: var(--navy);
 }
 .responsive {

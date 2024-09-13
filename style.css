@@ -3,12 +3,12 @@
   --bg: #c8e1ee;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
-.gallery{
+/* .gallery{
   font-family:"Sacramento", cursive;
   font-size: 6rem;
   font-weight: bold;
   color: var(--navy);
-}
+} */
 .responsive {
   width: 100%;
   height: auto;
@@ -78,7 +78,7 @@ body {
   background-position: var(--bg);
   background-size: cover;
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
@@ -92,10 +92,6 @@ body {
   font-weight: bold;
 }
 
-.home h2 {
-  color: var(--bg);
-}
-
 .home h3 {
   color: var(--navy);
   font-size: 2.5rem;
@@ -107,9 +103,9 @@ body {
   color: var(--navy);
 }
 
-.home .couple {
+/* .home .couple {
   margin-top: 100px;
-}
+} */
 
 .home .couple h3 {
   font-family: "Sacramento";
@@ -132,6 +128,15 @@ body {
 .home .heart i {
   margin: auto;
   color: var(--bg);
+}
+
+.gallery {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.gallery #item {
+  border-radius: 1.5rem;
 }
 
 /* Info */

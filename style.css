@@ -139,6 +139,44 @@ body {
   border-radius: 1.5rem;
 }
 
+.modal-gallery {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-gallery .modal-gallery-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.modal-gallery .modal-gallery-image {
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+}
+
+#btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff; /* Warna latar belakang tombol */
+  border: none; /* Tidak ada border */
+  padding: 10px 20px; /* Padding untuk membuat tombol lebih besar */
+  cursor: pointer; /* Cursor untuk membuat tombol bisa di-klik */
+}
+
 /* Info */
 .info,
 .tema {

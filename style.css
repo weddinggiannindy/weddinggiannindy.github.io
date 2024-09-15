@@ -156,25 +156,29 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   /* background-color: #fff; */
-  padding: 20px;
+  /* padding: 5px; */
   border-radius: 5px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
-.modal-gallery .modal-gallery-image {
+/* .modal-gallery .modal-gallery-image {
   width: 80%;
   height: auto;
   margin: 20px auto;
-}
+} */
 
 #btn-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #fff; /* Warna latar belakang tombol */
-  border: none; /* Tidak ada border */
-  padding: 10px 20px; /* Padding untuk membuat tombol lebih besar */
-  cursor: pointer; /* Cursor untuk membuat tombol bisa di-klik */
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+  color: white;
+  border: #ffffff88 1px solid;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* border: none;  */
+  padding: 5px 10px; 
+  cursor: pointer;
+  font-size: 10px;
 }
 
 /* Info */
@@ -301,11 +305,11 @@ footer a:hover {
   html {
     font-size: 75%;
   }
-
+  
   .simply-countdown>.simply-section {
     padding: 70px;
   }
-
+  
   .home .heart {
     display: none;
   }

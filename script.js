@@ -2,12 +2,13 @@
     const urlParams = new URLSearchParams(window.location.search);
     const recipientName = urlParams.get('kepada');
     if (recipientName) {
-      document.getElementById('recipient-name').textContent = recipientName.replace(/\+/g, ' ');
+      document.getElementById('recipient-name').innerHTML = recipientName.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     }
-  
+
+
     // Countdown function
     function countdown() {
-      const countDate = new Date("September 1, 2024 19:30:00").getTime();
+      const countDate = new Date("December 15, 2024 08:00:00").getTime();
       const now = new Date().getTime();
       const gap = countDate - now;
   

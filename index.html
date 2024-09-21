@@ -1,315 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gian & Nindy Wedding</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- simplyCountdown -->
-  <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
-  <script src="countdown/simplyCountdown.min.js"></script>
-
-  <!-- Bootstrap Icons -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fulan & Fulanah</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=DM Serif Text|Autour One|Merienda|Amita|Kumar One|Lobster|Redressed|Lavishly Yours|Sunshine' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
-
 <body>
-  <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center">
-    <main>
-      <h2 class="fw-semibold">UNDANGAN PERNIKAHAN</h2>
-      <h1>Gian & Nindy</h1>
-      <p>Kepada Bapak/Ibu/Saudara/i</p>
-      <h2 id="tamu" class="fw-semibold">Tamu Undangan</h2>
-      <br>
-      <!-- <script>
-        const queryString = document.location.search.split("?")[1];
+  
+  <!-- Frame Cover -->
+<div class="frame frame-cover" id="frame-cover">
+  <div>
+      <h4 class="transisi transisi-atas" style="font-family: Redressed; font-size: 3vh; color: rgb(255, 255, 255);">the Wedding of</h4>
+      <h1 class="transisi transisi-kanan" style="font-family: Redressed; font-size: 5vh; color: rgb(255, 255, 255);">Fulan & Fulanah</h1>
+      <p class="transisi transisi-bawah" style="font-family: Redressed; font-size: 2vh; color: rgb(255, 255, 255);">Minggu, 01 September 2024</p>
+  </div>
+  <div class="tombolcover">
+      <h3 class="transisi transisi-bawah" style="font-size: 14px; color: rgb(255, 255, 255); ">Kepada Yth<br>Bapak/Ibu/Saudara/i</h3>
+      <h2 id="recipient-name" class="transisi transisi-bawah" style="background-color: rgba(255, 255, 255, 0,5); border-radius: 15px; padding: 10px; font-size: 18px; color: rgb(255, 255, 255); margin-bottom: 0px; "></h2>
+      <button id="open-music-btn" class="btn btn-dark mt-3 transisi transisi-atas" onclick="showFrame1()"><i class="fas fa-envelope-open" style="font-size: 14px;"> </i>  Buka Undangan</button>
+      <p><p>
+      <h5 style="font-size: 12px; color: rgb(255, 255, 255); margin-top: 0px;">Mohon maaf bila salah penulisan nama/gelar</h5>
+      <p></p>
+  </div>
+</div>
 
-        document.write(`<h2>${queryString}</h2>`);
-      </script> -->
-      <p>Kami mengundang Anda untuk hadir di acara pernikahan kami.</p>
-      <h2>15 | 12 | 2024</h2>
-      <div class="simply-countdown"></div>
-      <a href="#home" class="btn btn-lg mt-4">Buka undangan</a>
-    </main>
-  </section>
 
-  <section id="home" class="home">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6 text-center">
-          <h3><i>Bismillahirrahmanirrahim</i></h3>
-          <p>Dengan memohon rahmat dan ridho Allah Subhanahu wa Ta'ala, yang telah menciptakan makhluk-Nya
-            berpasang-pasangan. Kami bermaksud menyeleggarakan pernikahan kami: </p>
-        </div>
+  <!-- Frame 1 -->
+  <div class="frame frame-1" id="frame-1">
+   
+      <h4 style="font-family: Redressed; font-size: 1em; color: rgb(255, 255, 255); " class="transisi transisi-bawah">the Wedding of</h4>
+      <h1 style="font-family: Redressed; font-size: 2em; color: rgb(255, 255, 255);" class="transisi transisi-kiri">
+        Fulan & Fulanah
+      </h1>
+      <h4 style="font-family: Redressed; font-size: 1em; color: rgb(255, 255, 255);" class="transisi transisi-atas">Minggu, 01 September 2024</h4>
+    
+    <div class="dandiantara">
+      <p class="transisi transisi-bawah" style="font-size: 12px; color: rgb(255, 255, 255); "><i>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang"</i></p>
+      <p class="transisi transisi-bawah" style="font-size: 12px; color: rgb(255, 255, 255); ">- Q.S. Ar-Rum:21 -</p>
+    </div>
+  </div>
+
+  <!-- Frame 3 -->
+  <div class="frame frame-3" id="frame-3">
+    <div>
+      <img class="transisi transisi-kiri" src="pria.jpg" alt="Groom">
+      <p class="transisi transisi-kanan" style="font-family: Redressed; font-size: 4vh;">Fulan bin Fulan, S.H</p>
+      <p class="transisi transisi-atas">Anak pertama dari Bapak Fulan bin Fulan dan Ibu Fulanah binti Fulan</p>
+      <p style="font-family: Lobster; font-size: 3vh;">&</p>
+      <img class="transisi transisi-kanan" src="wanita.jpg" alt="Bride">
+      <p class="transisi transisi-kanan" style="font-family: Redressed; font-size: 4vh;">Fulanah binti Fulan, S.H</p>
+      <p class="transisi transisi-atas">Anak pertama dari Bapak Fulan bin Fulan dan Ibu Fulanah binti Fulan</p>
+    </div>
+  </div>
+  <!-- Frame 4 -->
+  <div class="frame frame-4" id="frame-4">
+    <div>
+      <h2 class="transisi transisi-bawah" style="font-family: Redressed;">Save the Date</h2>
+      <div id="countdown" class="countdown transisi transisi-atas"></div>
+      <div class="event">
+        <h4 class="transisi transisi-kiri">Akad Nikah</h4>
+        <p class="transisi transisi-kanan">Minggu, 01 September 2024</p>
+        <p class="transisi transisi-kiri">Pukul 15.00 WITA</p>
+        <p class="transisi transisi-bawah"><b>GRAND SUMBER RIA BALLROOM</b></p>
+        <p class="transisi transisi-atas" style="font-size: 12px;">Jl. Pangeran Hidayat III, Wongkaditi Barat, Kec. Kota Utara, Kota Gorontalo</p>
+        <a href="https://maps.app.goo.gl/eD97PpCGPC5Pg6sj9" target="_blank" class="btn btn btn-dark mt-3 btn-block">Lokasi</a>
       </div>
-
-      <div class="row justify-content-center couple text-center">
-        <div class="col-md-6 mb-3">
-          <h3>Gian Saputra</h3>
-          <p>Putra dari <br> Bapak Samsudin dan Ibu Yati Sumiati</p>
-        </div>
-
-        <i class="bi bi-heart-fill text-danger my-3"></i>
-
-        <div class="col-md-6 my-3">
-          <h3>Nindy Silvia Dewi</h3>
-          <p>Putri dari <br> Bapak Asep Hermawan dan Ibu Nining Tursini</p>
-        </div>
-        <p>Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu
-          sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan
-          sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
-          berpikir.<br>(QS.Ar-Rum 21)</p>
-
-
-        <div class="gallery">
-          <h2 class="my-5">Our Gallery</h2>
-          <div class="container text-center">
-            <div class="row row-cols-3">
-              <img id="item" class="col p-2" src="img/1.jpg" alt="">
-              <img id="item" class="col p-2" src="img/2.jpg" alt="">
-              <img id="item" class="col p-2" src="img/3.jpg" alt="">
-              <img id="item" class="col p-2" src="img/4.jpg" alt="">
-              <img id="item" class="col p-2" src="img/5.jpg" alt="">
-              <img id="item" class="col p-2" src="img/6.jpg" alt="">
-            </div>
-
-            <div id="modal-gallery" class="modal-gallery">
-              <div class="modal-gallery-content">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="img/1.jpg" class="d-block w-100 modal-gallery-image" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/2.jpg" class="d-block w-100 modal-gallery-image" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/3.jpg" class="d-block w-100 modal-gallery-image" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/4.jpg" class="d-block w-100 modal-gallery-image" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/5.jpg" class="d-block w-100 modal-gallery-image" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/6.jpg" class="d-block w-100 modal-gallery-image" alt="...">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                  <div id="btn-close" class="btn-block">X</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section id="info" class="info">
-    <div class="container">
-      <div class="row justify-content-center mt-2">
-        <div class="text-center">
-          <h2>- Save the Date -</h2>
-          <p>InsyaAllah rangkaian acara akan diselenggarakan pada:</p>
-        </div>
-        <div class="col-md-5 col-10">
-          <div class="card text-center text-bg-light mb-5">
-            <div class="card-header">Akad Nikah</div>
-            <div class="card-body">
-              <div class="row justify-content-center">
-                <div class="col-md-6">
-                  <i class="bi bi-clock d-block"></i>
-                  <span>08.00 - selesai</span>
-                </div>
-                <div class="col-md-6">
-                  <i class="bi bi-calendar3 d-block"></i>
-                  <span>15 Desember 2024</span>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 col-10">
-          <div class="card text-center text-bg-light">
-            <div class="card-header">Resepsi</div>
-            <div class="card-body">
-              <div class="row justify-content-center">
-                <div class="col-md-6">
-                  <i class="bi bi-clock d-block"></i>
-                  <span>10.00 - selesai</span>
-                </div>
-                <div class="col-md-6">
-                  <i class="bi bi-calendar3 d-block"></i>
-                  <span>15 Desember 2024</span>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
-          <h2 class="mt-5">Lokasi Acara</h2>
-          <p class="alamat">Alamat: Kediaman Mempelai Wanita. <br> Desa Lame Blok Selasa Rt/Rw/ 03/02 Kec.Leuwimunding
-            Kab. Majalengka Jawa Barat 45473
-          </p>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d596.8197978489246!2d108.3308490738273!3d-6.765923480366091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f270006c6d5b1%3A0x7f2da7ebeae2ced0!2sLapangan%20Volley%20Sasak%20jangkung!5e1!3m2!1sen!2sid!4v1725674878954!5m2!1sen!2sid"
-            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-          <a href="https://maps.app.goo.gl/8ZpVemSn8kHStjNe6" target="_blank" class="btn btn-light btn-sm my-3">Klik
-            untuk
-            membuka peta</a>
-          <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak
-            ada tanda-tanda sedang dilangsungkan pernikahan, bisa jadi anda salah jadwal, atau salah tempat.</p>
-        </div>
+      <div class="event">
+        <h4 class="transisi transisi-kanan">Resepsi</h4>
+        <p class="transisi transisi-kiri">Minggu, 01 September 2024</p>
+        <p class="transisi transisi-kanan">Pukul 19.00 WITA</p>
+        <p class="transisi transisi-bawah"><b>GRAND SUMBER RIA BALLROOM</b></p>
+        <p class="transisi transisi-atas" style="font-size: 12px;">Jl. Pangeran Hidayat III, Wongkaditi Barat, Kec. Kota Utara, Kota Gorontalo</p>
+        <a href="https://maps.app.goo.gl/eD97PpCGPC5Pg6sj9" target="_blank" class="btn btn btn-dark mt-3 btn-block">Lokasi</a>
       </div>
     </div>
-  </section>
-
-  <section id="tema" class="tema">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="text-center">
-          <p class="text-center">Atas perhatian dan pengertiannya, kami mengucapkan terima kasih. <br>Jazaakumullahu
-            Khayran</p>
-        </div>
+  </div>
+  
+  <!-- Frame 7 -->
+  <div class="frame frame-7" id="frame-7">
+    <h2 class="transisi transisi-bawah" style="font-family: Redressed;">Kirim Kado</h2><p></p>
+    <p class="transisi transisi-atas" style="font-size: 16px; ">Kehadiran Anda merupakah hadiah terbaik yang bisa kami harapkan. Namun jika Anda bermaksud untuk mengirimkan hadiah pernikahan lain, silahkan klik tombol salin untuk menyalin nomor rekening</p>
+    <div class="gift-card transisi transisi-kanan">
+      <div class="gift-card-logo-mandiri">
+        <img src="https://ver02.rumahpiatu.org/wp-content/uploads/2020/04/logo-mandiri.png" alt="Mandiri Logo" style="width:70px;">
       </div>
-
-      <div class="row justify-content-center mt-4">
-        <div class="col text-center">
-          <h2 class="mb-4">- Doa untuk Pengantin -</h2>
-          <p>Barakallahu laka wa baraka ‘alaika wa jama’a bainakuma fi khayr<br>
-            “Semoga Allah memberikan keberkahan padamu dan mengumpulkan kalian berdua dalam kebaikan”<br>
-            Semoga menjadi keluarga yang sakinah mawaddah warahmah. Aamiin.</p>
-        </div>
-      </div>
+      <p>Fulan bin Fulan</p>
+      <h3>112233445566</h3>
+      <button class="btn btn btn-dark mt-3 btn-block" onclick="copyToClipboard('112233445566')">Salin Nomor</button>
+      <p></p>
     </div>
-  </section>
-
-  <section id="rsvp" class="rsvp">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
-          <h2>Konfirmasi Kehadiran</h2>
-          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
-        </div>
+    <div class="gift-card transisi transisi-kiri">
+      <div class="gift-card-logo-bri">
+        <img src="https://i0.wp.com/febi.uinsaid.ac.id/wp-content/uploads/2020/11/Logo-BRI-Bank-Rakyat-Indonesia-PNG-Terbaru.png?fit=1650%2C1408&ssl=1" alt="BRI Logo" style="width:50px;">
       </div>
-
-      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
-        action="https://script.google.com/macros/s/AKfycbyo5b45Zh4ngMHTUU2pmaXzoKg0v7qG8YP0OQh2wlnwV4qXCuyzPmLjcxA6mA67RkWCbw/exec"
-        id="my-form">
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="nama" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="nama" name="nama">
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="jumlah" class="form-label">Jumlah</label>
-            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="status" class="form-label">Konfirmasi</label>
-            <select name="status" id="status" class="form-select">
-              <option selected>Pilih salah satu</option>
-              <option value="Hadir">Hadir</option>
-              <option value="Tidak Hadir">Tidak Hadir</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-12" style="margin-top: 35px;">
-          <button class="btn btn-primary">Kirim</button>
-        </div>
-      </form>
+      <p>Fulanah binti Fulan</p>
+      <h3>778899001122</h3>
+      <button class="btn btn btn-dark mt-3 btn-block" onclick="copyToClipboard('778899001122')">Salin Nomor</button>
+      <p></p>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <small class="block">&copy; 2024 Gian & Nindy Wedding. <br>All Rights Reserved.</small>
-          <small class="block">Design by <a href="">@endahfn</a>.</small>
-        </div>
+  <!-- Frame 5 -->
+  <div class="frame frame-5" id="frame-5">
+    <center><h2 class="transisi transisi-bawah" style="font-family: Redressed; ">Moment Gallery</h2></center><br/>
+    <div class="gallery">
+      <img class="transisi transisi-kanan" src="https://img.freepik.com/premium-photo/3d-cartoon-groom-bride_545377-8569.jpg" alt="Gallery Image 1">
+      <img class="transisi transisi-kiri" src="https://img.freepik.com/premium-photo/3d-illustration-muslim-wedding-couple-blue-costumes_148003-2185.jpg?w=360" alt="Gallery Image 2">
+      <img class="transisi transisi-kanan" src="https://img.freepik.com/premium-photo/3d-illustration-muslim-wedding-couple-brown-costumes_148003-2137.jpg" alt="Gallery Image 3">
+      <img class="transisi transisi-kiri" src="https://img.freepik.com/premium-photo/3d-illustration-muslim-wedding-couple-brown-costumes_148003-2140.jpg" alt="Gallery Image 4">
+    </div>
+  </div>
+
+  <!-- Frame 6 -->
+  <div class="frame frame-6" id="frame-6">
+    <center><h2 class="transisi transisi-bawah" style="font-family: Redressed;">Doa dan Ucapan</h2></center><p></p>
+    <form id="comment-form">
+      <div class="form-group transisi transisi-kiri">
+        <label for="name">Nama:</label>
+        <input type="text" class="form-control" id="name" required>
       </div>
+      <div class="form-group transisi transisi-kiri">
+        <label for="attendance">Konfirmasi Kehadiran:</label>
+        <select class="form-control" id="attendance" required>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+      </div>
+      <div class="form-group transisi transisi-kiri">
+        <label for="comment">Kirim Doa & Ucapan:</label>
+        <textarea class="form-control" id="comment" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark btn-block">Kirim</button>
+    </form>
+    <div class="comment-section" id="comment-section"></div>
+  </div>
+
+  <!-- Frame 2 -->
+  <div class="framekecil frame-2" id="frame-2">
+    <div>
+      <p class="transisi transisi-bawah">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami. Atas kehadiran dan doa restunya, kami ucapkan terima kasih.</p>
     </div>
-  </footer>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script>
-    simplyCountdown('.simply-countdown', {
-      year: 2024, // required
-      month: 12, // required
-      day: 15, // required
-      hours: 8, // Default is 0 [0-23] integer
-      words: { //words displayed into the countdown
-        days: { singular: 'hari', plural: 'hari' },
-        hours: { singular: 'jam', plural: 'jam' },
-        minutes: { singular: 'menit', plural: 'menit' },
-        seconds: { singular: 'detik', plural: 'detik' }
-      },
-    });
-  </script>
-  <script>
-    const params = new URLSearchParams(document.location.search);
-    const tamu = params.get('tamu');
-    if (tamu) {
-      document.getElementById('tamu').innerHTML = tamu.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-    };
-  </script>
-  <script>
-    const items = document.querySelectorAll('#item');
-    const gallery = document.querySelector('.modal-gallery');
-    const btnClose = document.querySelector('#btn-close');
+  <button id="music-control" class="hidden">⏸️</button>
+    <audio id="background-music" src="backsound.mp3"></audio>
 
-    items.forEach((item, i) => {
-      item.addEventListener('click', () => {
-        // alert(`Image ${i + 1} clicked!`);
-        gallery.style.display = 'flex';
-        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-      });
-    });
+    <!-- HAPUS UCAPAN / DOA / KOMENTAR
+      <button onclick="hapusSemuaItem()">Hapus Semua Ucapan</button>
+    -->
 
-    btnClose.addEventListener('click', () => {
-      gallery.style.display = 'none';
-      document.getElementsByTagName('body')[0].style.overflow = 'auto';
-    });
-  </script>
+    <footer>
+      <a href="https://wa.me/+6289609745090?text=Hai%20Admin,%20Saya%20ingin%20pesan%20Undangan%20Digital"><img src="https://img.icons8.com/?size=20&id=uZWiLUyryScN&format=png&color=000000" />
+        Pesan Undangan Digital Sekarang!
+      </a>
+    </footer>
+  
+    
+
+  <script src="script.js"></script>
+  
+  
 </body>
-
 </html>

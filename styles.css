@@ -4,13 +4,8 @@ body, html {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
   }
-  .autoscrollable-wrapper {
-  overflow: auto;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-  }
-  .frame {
+
+.frame {
     position: relative;
     width: 100%;
     min-height: 100vh;

@@ -60,7 +60,7 @@
 
       recipientName = (recipientName == null) ? 'guest' : recipientName;
 
-      fetch('https://api.rdev.my.id:5000/attendance', {
+      fetch('https://weddinggiannindy.rdev.my.id/attendance', {
         method: 'POST',
         headers: {
           "content-type": "application/json"

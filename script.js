@@ -1,6 +1,6 @@
     // Handle URL parameters for recipient name
-    const urlParams = new URLSearchParams(window.location.search);
-    const recipientName = urlParams.get('kepada');
+    let urlParams = new URLSearchParams(window.location.search);
+    let recipientName = urlParams.get('kepada');
     if (recipientName) {
       document.getElementById('recipient-name').innerHTML = recipientName.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     }
@@ -57,6 +57,28 @@
       const name = document.getElementById('name').value;
       const attendance = document.getElementById('attendance').value;
       const comment = document.getElementById('comment').value;
+
+      recipientName = (recipientName == null) ? 'guest' : recipientName;
+
+      fetch('http://localhost:5000/api/attendance', {
+        method: 'POST',
+        headers: {
+          "content-type": "application/json"
+        },
+        body: JSON.stringify({
+          nama_tamu: recipientName,
+          nama: name,
+          kehadiran: attendance,
+          ucapan: comment
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      })
   
       saveComment(name, attendance, comment);
   
